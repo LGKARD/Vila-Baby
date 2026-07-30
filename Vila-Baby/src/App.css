@@ -351,6 +351,7 @@
   height: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 .programs-heading {
@@ -409,7 +410,7 @@
 }
 
 .program-card-copy {
-  padding: 20px 22px 20px 0;
+  padding: 20px 22px 20px 22px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -438,7 +439,7 @@
 }
 
 .program-card--green .program-card-visual {
-  background: #dcefd7;
+  background: #afd8a0;
 }
 
 .program-card--green .program-card-subtitle {
@@ -446,7 +447,7 @@
 }
 
 .program-card--lilac .program-card-visual {
-  background: #e5daf1;
+  background: #dfd5e5;
 }
 
 .program-card--lilac .program-card-subtitle {
