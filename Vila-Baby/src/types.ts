@@ -64,3 +64,25 @@ export type ValuesSectionProps = {
 }
 
 export type ValueCardProps = ValueCard
+
+export type ProgramCardData = {
+  imageSrc: string
+  imageAlt: string
+  title: string
+  subtitle: string
+  description: string
+  themeClassName: string
+}
+
+export type ProgramsSectionProps = {
+  title: string
+  schoolName: string
+  description: string
+  imageSrc: string
+  imageAlt: string
+  programsHeading: string
+  programsHeadingIconClassName: string
+  programs: ProgramCardData[]
+}
+
+export type ProgramCardProps = ProgramCardData

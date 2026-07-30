@@ -2,6 +2,7 @@ import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import ValuesSection from './components/ValuesSection'
+import ProgramsSection from './components/ProgramsSection'
 
 const valueCards = [
   {
@@ -30,6 +31,35 @@ const valueCards = [
   },
 ]
 
+const programsSection = {
+  title: 'Sobre a',
+  schoolName: 'Vila Camaleão Baby',
+  description:
+    'Somos um berçário e maternal que acredita que os primeiros anos de vida são fundamentais para a formação de seres humanos felizes, confiantes e preparados para o futuro. Aqui, seu bebê cresce cercado de amor, segurança e estímulos que fazem a diferença.',
+  imageSrc: '/sala.jpeg',
+  imageAlt: 'Sala infantil da Vila Camaleão Baby com brinquedos e decoração acolhedora',
+  programsHeading: 'Nossos programas',
+  programsHeadingIconClassName: 'fa-regular fa-sun',
+  programs: [
+    {
+      imageSrc: '/green-chameleon.jpeg',
+      imageAlt: 'Camaleão verde ilustrado para o programa Berçário',
+      title: 'Berçário',
+      subtitle: 'Do nascimento a 1 ano e 6 meses',
+      description: 'Ambiente acolhedor para os primeiros descobrimentos, com rotina segura e estímulos adequados para cada fase.',
+      themeClassName: 'program-card--green',
+    },
+    {
+      imageSrc: '/lilac-chameleon.jpeg',
+      imageAlt: 'Camaleão lilás ilustrado para o programa Maternal',
+      title: 'Maternal',
+      subtitle: 'De 1 ano e 6 meses a 3 anos',
+      description: 'Estimulo à autonomia, socialização e aprendizado por meio de atividades lúdicas e experiências significativas.',
+      themeClassName: 'program-card--lilac',
+    },
+  ],
+}
+
 function App() {
   return (
     <div className="site-shell">
@@ -44,6 +74,8 @@ function App() {
       />
 
       <ValuesSection items={valueCards} />
+
+      <ProgramsSection {...programsSection} />
     </div>
   )
 }
