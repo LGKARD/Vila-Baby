@@ -86,3 +86,35 @@ export type ProgramsSectionProps = {
 }
 
 export type ProgramCardProps = ProgramCardData
+
+export type FooterLinkItem = {
+  href: string
+  label: string
+}
+
+export type FooterColumn = {
+  title: string
+  links: FooterLinkItem[]
+}
+
+export type FooterContactItem = {
+  iconClassName: string
+  lines: string[]
+}
+
+export type FooterSocialLink = {
+  href: string
+  label: string
+  iconClassName: string
+  className?: string
+}
+
+export type FooterProps = {
+  logoSrc: string
+  logoAlt: string
+  columns: FooterColumn[]
+  contactTitle: string
+  contactItems: FooterContactItem[]
+  socialLinks: FooterSocialLink[]
+  copyrightText: string
+}

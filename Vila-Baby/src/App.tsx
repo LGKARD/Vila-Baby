@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import ValuesSection from './components/ValuesSection'
 import ProgramsSection from './components/ProgramsSection'
+import Footer from './components/Footer'
 
 const valueCards = [
   {
@@ -60,6 +61,47 @@ const programsSection = {
   ],
 }
 
+const footerColumns = [
+  {
+    title: 'Institucional',
+    links: [
+      { href: '#escola', label: 'A Escola' },
+      { href: '#proposta', label: 'Proposta Pedagógica' },
+      { href: '#bercario', label: 'Berçário' },
+      { href: '#maternal', label: 'Maternal' },
+    ],
+  },
+  {
+    title: 'Informações',
+    links: [
+      { href: '#galeria', label: 'Galeria' },
+      { href: '#blog', label: 'Blog' },
+      { href: '#trabalhe-conosco', label: 'Trabalhe Conosco' },
+    ],
+  },
+]
+
+const footerContactItems = [
+  { iconClassName: 'fa-brands fa-whatsapp', lines: ['(11) 99999-9999'] },
+  { iconClassName: 'fa-regular fa-envelope', lines: ['contato@vilacamaleaobaby.com.br'] },
+  { iconClassName: 'fa-solid fa-location-dot', lines: ['Rua das Cores, 123', 'Vila Feliz - SP'] },
+]
+
+const footerSocialLinks = [
+  {
+    href: 'https://www.instagram.com',
+    label: 'Instagram',
+    iconClassName: 'fa-brands fa-instagram',
+    className: 'footer-social-link--instagram',
+  },
+  {
+    href: 'https://www.facebook.com',
+    label: 'Facebook',
+    iconClassName: 'fa-brands fa-facebook-f',
+    className: 'footer-social-link--facebook',
+  },
+]
+
 function App() {
   return (
     <div className="site-shell">
@@ -76,6 +118,16 @@ function App() {
       <ValuesSection items={valueCards} />
 
       <ProgramsSection {...programsSection} />
+
+      <Footer
+        logoSrc="/vila%20baby.jpg"
+        logoAlt="Logo Vila Camaleão Baby"
+        columns={footerColumns}
+        contactTitle="Contato"
+        contactItems={footerContactItems}
+        socialLinks={footerSocialLinks}
+        copyrightText="© 2024 Vila Camaleão Baby. Todos os direitos reservados."
+      />
     </div>
   )
 }
