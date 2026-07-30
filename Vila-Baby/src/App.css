@@ -203,6 +203,93 @@
   object-position: center;
 }
 
+.values-section {
+  background: #3c7382;
+  color: #f7f3ef;
+  padding: 82px 28px 92px;
+}
+
+.values-section-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.value-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 100%;
+}
+
+.value-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.value-card-title {
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(1.35rem, 1.8vw, 1.7rem);
+  line-height: 1.05;
+  font-weight: 600;
+}
+
+.value-card-description {
+  margin: 0;
+  max-width: 18rem;
+  color: rgba(247, 243, 239, 0.92);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.value-card::after {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 3px;
+  margin-top: 4px;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0.85;
+}
+
+.value-card--mint {
+  color: #dff2bd;
+}
+
+.value-card--gold {
+  color: #f6c94f;
+}
+
+.value-card--lilac {
+  color: #c9b4ea;
+}
+
+.value-card--sun {
+  color: #ffd45d;
+}
+
 @media (max-width: 1280px) {
   .hero-copy {
     padding-inline: 40px;
@@ -230,6 +317,10 @@
   .whatsapp-cta {
     padding: 14px 24px;
     font-size: 1rem;
+  }
+
+  .values-grid {
+    gap: 22px;
   }
 }
 
@@ -267,6 +358,15 @@
 
   .hero-visual {
     min-height: 460px;
+  }
+
+  .values-section {
+    padding-block: 68px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 32px;
   }
 }
 
@@ -315,5 +415,18 @@
 
   .hero-visual {
     min-height: 320px;
+  }
+
+  .values-section {
+    padding: 56px 18px 64px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .value-card-description {
+    max-width: none;
   }
 }

@@ -50,3 +50,17 @@ export type HeroProps = {
   imageSrc: string
   imageAlt: string
 }
+
+export type ValueCard = {
+  iconClassName: string
+  title: string
+  description: string
+  accentClassName: string
+}
+
+export type ValuesSectionProps = {
+  title?: string
+  items: ValueCard[]
+}
+
+export type ValueCardProps = ValueCard
