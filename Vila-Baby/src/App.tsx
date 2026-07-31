@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import ValuesSection from './components/ValuesSection'
 import ProgramsSection from './components/ProgramsSection'
+import GallerySection from './components/GallerySection'
 import CtaSection from './components/CtaSection'
 import Footer from './components/Footer'
 
@@ -59,6 +60,19 @@ const programsSection = {
       description: 'Estimulo à autonomia, socialização e aprendizado por meio de atividades lúdicas e experiências significativas.',
       themeClassName: 'program-card--lilac',
     },
+  ],
+}
+
+const gallerySection = {
+  eyebrow: 'Nosso dia a dia',
+  title: 'Galeria',
+  images: [
+    { src: '/galery/brinquedos.png', alt: 'Crianças brincando com brinquedos coloridos na Vila Camaleão Baby' },
+    { src: '/galery/desenho.jpeg', alt: 'Criança desenhando durante atividade pedagógica' },
+    { src: '/galery/leitura.png', alt: 'Momento de leitura e contação de histórias com os bebês' },
+    { src: '/galery/musica.jpeg', alt: 'Atividade musical com instrumentos infantis' },
+    { src: '/galery/playground.png', alt: 'Crianças brincando no playground ao ar livre' },
+    { src: '/galery/tinta.png', alt: 'Atividade de pintura e estímulo sensorial com tinta' },
   ],
 }
 
@@ -119,6 +133,8 @@ function App() {
       <ValuesSection items={valueCards} />
 
       <ProgramsSection {...programsSection} />
+
+      <GallerySection {...gallerySection} />
 
       <CtaSection
         title="Agende uma visita"

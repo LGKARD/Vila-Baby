@@ -100,6 +100,17 @@ export type ProgramsSectionProps = {
 
 export type ProgramCardProps = ProgramCardData
 
+export type GalleryImage = {
+  src: string
+  alt: string
+}
+
+export type GallerySectionProps = {
+  eyebrow?: string
+  title: string
+  images: GalleryImage[]
+}
+
 export type FooterLinkItem = {
   href: string
   label: string
