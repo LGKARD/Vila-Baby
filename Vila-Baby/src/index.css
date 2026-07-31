@@ -15,18 +15,31 @@
   }
 }
 
+/* garante que padding/border entrem no width:100%, evitando estouro lateral dos botões */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @media (prefers-reduced-motion: reduce) {
   :root {
     scroll-behavior: auto;
   }
 }
 
+html {
+  overflow-x: hidden;
+}
+
 #root {
   width: 100%;
   min-height: 100svh;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   font-family: var(--sans);
+  overflow-x: hidden;
 }
