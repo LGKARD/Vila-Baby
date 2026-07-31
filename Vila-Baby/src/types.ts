@@ -12,6 +12,7 @@ export type BrandLogoProps = {
 export type NavLinkProps = {
   href: string
   children: string
+  onClick?: () => void
 }
 
 export type NavItem = {
