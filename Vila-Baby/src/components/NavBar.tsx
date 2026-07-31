@@ -1,5 +1,6 @@
 import BrandLogo from './BrandLogo'
 import NavLink from './NavLink'
+import WhatsAppButton from './WhatsAppButton'
 import type { NavBarProps } from '../types'
 
 function NavBar({ logoSrc, logoAlt, items }: NavBarProps) {
@@ -15,10 +16,7 @@ function NavBar({ logoSrc, logoAlt, items }: NavBarProps) {
         ))}
       </nav>
 
-      <a className="whatsapp-cta" href="#contato">
-        <i aria-hidden="true" className="fa-brands fa-whatsapp whatsapp-cta-icon" />
-        Falar no WhatsApp
-      </a>
+      <WhatsAppButton href="#contato">Falar no WhatsApp</WhatsAppButton>
     </header>
   )
 }

@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import ValuesSection from './components/ValuesSection'
 import ProgramsSection from './components/ProgramsSection'
+import CtaSection from './components/CtaSection'
 import Footer from './components/Footer'
 
 const valueCards = [
@@ -118,6 +119,13 @@ function App() {
       <ValuesSection items={valueCards} />
 
       <ProgramsSection {...programsSection} />
+
+      <CtaSection
+        title="Agende uma visita"
+        description="Venha conhecer nosso espaço e descubra como podemos cuidar do que você tem de mais precioso."
+        whatsappHref="#contato"
+        whatsappLabel="Falar no WhatsApp"
+      />
 
       <Footer
         logoSrc="/vila%20baby.jpg"

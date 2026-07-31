@@ -491,6 +491,37 @@
   color: #ffd45d;
 }
 
+.cta-section {
+  background: #c6e8b6;
+  padding: 56px 34px;
+}
+
+.cta-section-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.cta-copy h2 {
+  margin: 0;
+  color: #3c7382;
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+  font-weight: 600;
+}
+
+.cta-description {
+  margin: 10px 0 0;
+  max-width: 32rem;
+  color: #2f3e33;
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
 .site-footer {
   background: #3c7382;
   color: #f7f3ef;
@@ -797,6 +828,25 @@
 
   .programs-heading {
     margin-top: 30px;
+  }
+
+  .cta-section {
+    padding: 40px 18px;
+  }
+
+  .cta-section-inner {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .cta-description {
+    max-width: none;
+  }
+
+  .cta-section .whatsapp-cta {
+    width: 100%;
+    justify-content: center;
   }
 
   .program-card {

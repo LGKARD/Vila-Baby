@@ -30,6 +30,19 @@ export type HeaderProps = {
   logoAlt: string
 }
 
+export type WhatsAppButtonProps = {
+  href: string
+  children: ReactNode
+  className?: string
+}
+
+export type CtaSectionProps = {
+  title: string
+  description: string
+  whatsappHref: string
+  whatsappLabel: string
+}
+
 export type HeroActionVariant = 'primary' | 'secondary'
 
 export type HeroActionProps = {

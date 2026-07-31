@@ -1,10 +1,8 @@
 import NavBar from './NavBar'
 import type { HeaderProps, NavItem } from '../types'
 const navItems: NavItem[] = [
-  { href: '#escola', label: 'A Escola' },
-  { href: '#bercario', label: 'Berçário' },
-  { href: '#maternal', label: 'Maternal' },
   { href: '#proposta', label: 'Proposta Pedagógica' },
+  { href: '#escola', label: 'A Escola' },
   { href: '#galeria', label: 'Galeria' },
   { href: '#contato', label: 'Contato' },
 ]
